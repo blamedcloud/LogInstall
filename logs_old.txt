@@ -1,0 +1,10 @@
+vim, Wed Apr 15 22:05:20 EDT 2015
+unity-tweak-tool, Wed Apr 15 22:07:37 EDT 2015
+sl, Wed Apr 15 22:37:33 EDT 2015
+cowsay, Wed Apr 15 22:37:37 EDT 2015
+guake, Wed Apr 15 22:38:03 EDT 2015
+kdevelop, Wed Apr 15 22:43:30 EDT 2015
+pianobar, Wed Apr 15 22:44:01 EDT 2015
+steam, Thu Apr 16 12:17:54 EDT 2015
+clementine, Thu Apr 16 12:19:00 EDT 2015
+vlc, Thu Apr 16 12:26:04 EDT 2015

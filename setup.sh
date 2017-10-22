@@ -4,7 +4,8 @@
 
 ###First, add this folder to the PATH, so you can execute these commands from anywhere.
 path=$(cat /etc/environment)	#grabs PATH variable from /etc/environment
-				#perhaps consider extending to other 
+				#perhaps consider extending to other types of PATH storage
+				#that other systems might use.
 here=$(dirname $(readlink -f "$0"))
 echo $path | grep $here -q
 if [ $? -eq 0 ]

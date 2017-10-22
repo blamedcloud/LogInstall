@@ -3,9 +3,13 @@ Wrapper around apt-get to log installs when changing linux OS's or setting up a 
 
 ### First Time Setup:
 
-1. Clone this repo to wherever you want it on your new system.
-2. Run setup.sh as root. This will add the repo directory to your PATH environment variable.
-3. If you have a package_log from an older system, do
+Clone this repo to wherever you want it on your new system.
+Run setup.sh as root. This will add the repo directory to your PATH environment variable.
+
+	$ cd /path/to/cloned/repo/
+	$ sudo ./setup.sh
+
+If you have a package_log from an older system, do
 
 	$ install\_from\_log.sh /path/to/package_logs.txt
 
@@ -26,12 +30,12 @@ If you want to list the packages you have logged,
 
 p.s: I'm probably going to keep my personal install logs up to date in this repo, feel free to use them to install from if you wish.
 
-###Future Updates:
+### Future Updates:
 
 1. Eventually I plan to introduce some sort of profile/config file where you can set a few things, such as
-	A. installer (so you could use something other than apt-get)
-	B. log directory (so you could put the logs somewhere other than ($HOME/logs/)
-	C. log file names (if you don't like package\_logs.txt or failed\_install\_logs.txt for some reason)
+	* installer (so you could use something other than apt-get)
+	* log directory (so you could put the logs somewhere other than ($HOME/logs/)
+	* log file names (if you don't like package\_logs.txt or failed\_install\_logs.txt for some reason)
 
 2. Some sort of optional "yes |" functionality.
 

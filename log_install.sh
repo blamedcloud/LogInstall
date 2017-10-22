@@ -14,6 +14,7 @@ else
 			echo -e "\nPackage $1 installed succesfully! yay\n"
 		else
 			echo -e "\nPackage $1 failed to install for some reason. :(\n"
+			echo "$1," $(date) >> $HOME/logs/failed_install_logs.txt
 		fi
 		shift 1
 	done

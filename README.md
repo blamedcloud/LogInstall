@@ -5,7 +5,12 @@ Wrapper around apt-get to log installs when changing linux OS's or setting up a 
 
 Clone this repo to wherever you want it on your new system.
 
-Run setup.sh as root. This will add the repo directory to your PATH environment variable.
+If using ubuntu, then run setup_ubuntu.sh. This will edit the ~/.profile to add the repo directory to your PATH environment variable when you login.
+
+	$ cd /path/to/cloned/repo/
+	$ ./setup_ubuntu.sh
+
+If using something other than ubuntu (or something where using /etc/environment actually works), run setup.sh as root. This will add the repo directory to your PATH environment variable.
 
 	$ cd /path/to/cloned/repo/
 	$ sudo ./setup.sh

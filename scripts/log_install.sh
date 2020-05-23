@@ -5,6 +5,8 @@ if [ $# -eq 0 ]
 then
 	echo "ERROR: expected name of package to log and install."
 else
+	[ ! -d "$HOME/logs" ] && mkdir $HOME/logs
+
 	while [ $# -gt 0 ]
 	do
 		sudo apt-get install $1

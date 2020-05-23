@@ -5,17 +5,13 @@ Wrapper around apt-get to log installs when changing linux OS's or setting up a 
 
 Clone this repo to wherever you want it on your new system.
 
-If using ubuntu, then run setup_ubuntu.sh. This will edit the ~/.profile to add the repo directory to your PATH environment variable when you login.
+Run setup\_bin.sh in order to symlink the scripts into your $HOME/bin folder.
+This assumes that $HOME/bin is on your $PATH, or else this doesn't really do anything useful.
 
-	$ cd /path/to/cloned/repo/
-	$ ./setup_ubuntu.sh
+	$ cd /path/to/LogInstall
+	$ ./setup_bin.sh
 
-If using something other than ubuntu (or something where using /etc/environment actually works), run setup.sh as root. This will add the repo directory to your PATH environment variable.
-
-	$ cd /path/to/cloned/repo/
-	$ sudo ./setup.sh
-
-If you have a package_log from an older system, do
+If you have a package\_log from an older system, do
 
 	$ install_from_log.sh /path/to/package_logs.txt
 
@@ -36,7 +32,7 @@ If you want to list the packages you have logged,
 
 p.s: I'm probably going to keep my personal install logs up to date in this repo, feel free to use them to install from if you wish.
 
-### Future Updates:
+### Future Updates: (don't hold your breath)
 
 1. Eventually I plan to introduce some sort of profile/config file where you can set a few things, such as
 	* installer (so you could use something other than apt-get)

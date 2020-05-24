@@ -5,5 +5,6 @@
 thisDir=$(pwd)
 for script in $(ls scripts/)
 do
-	ln -s $thisDir/scripts/$script $HOME/bin/$script
+    [ -f $HOME/bin/$script ] && rm $HOME/bin/$script
+    ln -s $thisDir/scripts/$script $HOME/bin/$script
 done
